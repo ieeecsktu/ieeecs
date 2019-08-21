@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: rgb(1,32,71);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 55px;
+  text-align: center;
+  background: rgb(15,83,159);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(24, 26,27);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(255, 255, 255);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  color: rgb(232,230,227)
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: rgb(1,32,71);
+  padding-left: 20px;
+  color: rgb(232,230,227)
+
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(47,51,54);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:rgb(24, 26, 27);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="Logo_KTU_tr.png" style="width:180px;height:180px; float: left;">
+  <img src="cs-logo.png" style="width:435px;height:175px; float: right; margin-left: 10px">
+  <h1><font color="ffffff">Computer Society KTÜ</font> </h1>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>ETKINLIKLER</h2>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY" target="blank">
+      <img src="imgdtb1.jpg" style="width:100%"></a>
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY" target="blank">
+      <img src="imgdtb2.jpg" style="width:100%"></a>
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY" target="blank">
+      <img src="imgdtb3.jpg" style="width:100%"></a>
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY" target="blank">
+        <img src="imgdtb4.jpg" style="width:100%"><a/>
+        <div class="text">Caption Four</div>
+
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
+    <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+    </div>
+    <div class="card">
+      <h2>Yararlı linkler</h2>
+      <h5>Ders notları için Drive linkleri gelebilir</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Hakkımızda</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Hakkımızda bir kaç küçük şey gelecek buraya</p>
+    </div>
+
+    <div class="card">
+        <h3>Bizi takip edin</h3>
+        <a href="https://www.facebook.com/ieeektucs/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/ieeektucs?s=17" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://instagram.com/ieeektucs?igshid=17rldk6xlcxkk" target="_blank" class="fa fa-instagram"></a>
+  
+      </div>
+    <div class="card">
+      <h3>İletişim</h3>
+      <div class="fakeimg"><p><b>Adres:</b> Üniversite, Milli Egemenlik Cd. No:60, 61080 Ortahisar/Trabzon, Türkiye </p></div>
+      <div class="fakeimg"><p><b>E-posta: </b> test@gmail.com</p></div>
+      <div class="fakeimg"><p>E-posta kayıt icin kayit formu</p></div><!-- Google kayit formu gelir buraya -->
+      </br>
+
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+
+</body>
+</html>
