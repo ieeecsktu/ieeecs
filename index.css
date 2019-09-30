@@ -59,7 +59,7 @@
 
   /* Add a card effect for articles */
   .card {
-    background-color:rgb(24, 26, 27);
+    background-color:rgb(15,83,159);
     padding: 20px;
     margin-top: 20px;
   }
@@ -95,7 +95,7 @@
     color: white;
   }
   .fa-instagram {
-    background: #125688;
+    background: #4c5fd7;
     color: white;
   }
   * {box-sizing:border-box}
@@ -133,6 +133,7 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
@@ -228,9 +229,9 @@
     height: 50px;
     font-size: 11px;
     line-height: 50px;
-    width: 250px;
+    width: 275px;
     border-radius: 25px;
-    background-color: rgb(15,83,159);
+    background-color: rgb(69, 69, 70);
   }
   
   .chip img {
