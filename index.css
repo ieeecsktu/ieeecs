@@ -71,6 +71,23 @@
     clear: both;
   }
   
+  
+.btn:link, .btn:visited {
+  background-color: rgb(69, 69, 70);
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn:hover, .btn:active {
+  background-color: white;
+  border-radius: 25px;
+}
+
+  
   .fa {
     padding: 20px;
     font-size: 30px;
