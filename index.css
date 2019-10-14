@@ -74,7 +74,7 @@
   
 .btn:link, .btn:visited {
   background-color: rgb(69, 69, 70);
-  color: black;
+  color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
@@ -83,7 +83,7 @@
 }
 
 .btn:hover, .btn:active {
-  background-color: white;
+  background-color: rgb(69, 69, 70);
   border-radius: 25px;
 }
 
